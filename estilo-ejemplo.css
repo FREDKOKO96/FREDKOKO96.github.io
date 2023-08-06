@@ -40,3 +40,18 @@ button {
   border-radius: 8px;
   margin-top: 20px;
 }
+
+/* Media queries para responsividad */
+@media (max-width: 480px) {
+  /* Ajustar tamaño del teléfono y la pantalla para dispositivos móviles */
+  .phone {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+  }
+  .screen {
+    padding: 10px;
+  }
+}
+
