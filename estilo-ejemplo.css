@@ -173,7 +173,7 @@ header {
   }
 
   .logo img {
-      max-width: 100%;
+      max-width: 30%;
       height: auto; /* Esto mantiene el tamaño proporcional del logo */
       margin: 20px 0;
   }
