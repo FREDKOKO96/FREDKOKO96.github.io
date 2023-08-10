@@ -164,3 +164,40 @@ header {
       margin-top: 20px;
   }
 }
+/* Botón de contacto en color naranja */
+.contact-btn {
+  background-color: #FFA500;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: none; /* Ocultar en pantallas pequeñas */
+}
+
+.contact-btn:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
+/* Estilos para pantallas pequeñas (responsividad) */
+@media (max-width: 768px) {
+  /* (Estilos anteriores) */
+
+  .contact-btn {
+      display: none; /* Asegurarse de que el botón de contacto esté oculto en pantallas pequeñas */
+  }
+
+  .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+  }
+
+  /* Restaurar visibilidad del menú en pantallas pequeñas */
+  .menu.active ul {
+      display: block;
+  }
+}
