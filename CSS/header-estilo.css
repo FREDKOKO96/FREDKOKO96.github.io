@@ -44,26 +44,6 @@ header {
   transition: color 0.3s;
 }
 
-/* Color naranja para el botón de Inicio */
-.orange a {
-  color: #FFA500;
-}
-
-/* Color naranja para el botón de contacto */
-.contact a {
-  background-color: #FFA500;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.contact a:hover {
-  background-color: #FF8C00;
-  transform: scale(1.05);
-}
-
-/* Estilo al pasar el mouse sobre los enlaces */
 .menu ul li a:hover {
   color: #FFA500;
 }
@@ -112,6 +92,21 @@ header {
   margin-left: 5px;
 }
 
+/* Botón de contacto en color naranja */
+.contact-btn {
+  background-color: #FFA500;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
 /* Estilos para pantallas pequeñas (responsividad) */
 @media (max-width: 768px) {
   header {
@@ -120,13 +115,11 @@ header {
   }
 
   .menu ul {
-      margin-top: 20px;
       display: none;
       width: 100%;
       flex-direction: column;
-      align-items: center;
       position: absolute;
-      top: 80px; /* Ajusta esto según tus necesidades */
+      top: 80px;
       left: 0;
       background-color: white;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -139,17 +132,6 @@ header {
 
   .menu ul li {
       margin: 10px 0;
-  }
-
-  .menu ul li a {
-      color: #333;
-      font-weight: bold;
-      text-decoration: none;
-      transition: color 0.3s;
-  }
-
-  .menu ul li a:hover {
-      color: #FFA500;
   }
 
   .menu-toggle {
@@ -173,8 +155,12 @@ header {
   }
 
   .logo img {
-      max-width: 30%;
-      height:auto; /* Esto mantiene el tamaño proporcional del logo */
+      max-width: 100%;
+      height: auto;
       margin: 20px 0;
+  }
+
+  .contact-btn {
+      margin-top: 20px;
   }
 }
