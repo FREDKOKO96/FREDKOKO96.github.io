@@ -113,39 +113,7 @@ header.scrolled .menu-items {
 }
 
 
-/* Search Box */
 
-.search-icon-desktop {
-  cursor: pointer;
-}
-
-.searchbox-desktop {
-  position: absolute;
-  right:0;
-  top: 67px;
-  opacity: 0;
-  pointer-events: none;
-  transform: all .4s;
-}
-
-.searchbox-desktop.active {
-  pointer-events: auto;
-  opacity: 1; 
-}
-
-.searchbox-desktop input[type="text"] {
-  height: 48px;
-  width:300px;
-  border:none;
-  border-bottom: 1px solid #eee;
-  padding: 16px;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-}
-
-.searchbox-desktop input[type="text"]:focus {
-  outline: none;
-}
 
 /* Main */
 
