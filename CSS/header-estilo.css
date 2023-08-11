@@ -66,35 +66,8 @@ li a:hover {
 #check {
   display: none;
 }
-@media (max-width: 858px) {
-  .submenu.active ul {
-    display: block;
-  }
-  
-  .submenu.active > a i {
-    transform: rotate(180deg);
-  }
-  
-  .submenu ul {
-    display: none;
-    position: absolute;
-    background: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    top: 100%;
-    left: 0;
-  }
-}
-@media (max-width: 952px) {
-  .enlace {
-    padding-left: 20px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-}
 
+/* Estilos para submenús */
 .submenu ul {
   display: none;
   position: absolute;
@@ -104,13 +77,14 @@ li a:hover {
   width: 100%;
   top: 100%;
   left: 0;
+  z-index: 1; /* Asegura que los submenús estén por encima del contenido */
 }
 
-.submenu:hover ul {
+.submenu.active ul {
   display: block;
 }
 
-nav ul li.submenu:focus-within .submenu ul {
+.submenu:hover ul {
   display: block;
 }
 
@@ -131,8 +105,7 @@ nav ul li.submenu:focus-within .submenu ul {
   color: #ffffff;
 }
 
-
-
+/* Estilos para el menú móvil */
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
