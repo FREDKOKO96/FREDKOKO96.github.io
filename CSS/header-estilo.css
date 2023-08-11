@@ -66,7 +66,26 @@ li a:hover {
 #check {
   display: none;
 }
-
+@media (max-width: 858px) {
+  .submenu.active ul {
+    display: block;
+  }
+  
+  .submenu.active > a i {
+    transform: rotate(180deg);
+  }
+  
+  .submenu ul {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 100%;
+    left: 0;
+  }
+}
 @media (max-width: 952px) {
   .enlace {
     padding-left: 20px;
@@ -111,6 +130,8 @@ nav ul li.submenu:focus-within .submenu ul {
   background: #E8641C;
   color: #ffffff;
 }
+
+
 
 @media (max-width: 858px) {
   .checkbtn {
