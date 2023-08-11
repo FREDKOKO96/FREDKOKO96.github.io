@@ -69,19 +69,19 @@ li a:hover {
 
 /* Estilos para submenús */
 .submenu ul {
+  position: static;
   display: none;
-  position: absolute;
-  background: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  top: 100%;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: auto;
+  top: 0;
   left: 0;
-  z-index: 1; /* Asegura que los submenús estén por encima del contenido */
 }
 
 .submenu.active ul {
   display: block;
+  width: 100%;
 }
 
 .submenu:hover ul {

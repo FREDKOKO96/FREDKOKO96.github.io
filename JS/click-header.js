@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuLinks = document.querySelectorAll("nav ul li a");
   
     subMenus.forEach((submenu) => {
-      submenu.addEventListener("click", function (event) {
+      const submenuLink = submenu.querySelector("a");
+      submenuLink.addEventListener("click", function (event) {
         event.preventDefault(); // Evita la navegación si hay un enlace real
         closeAllSubMenus();
-        this.classList.toggle("active");
+        submenu.classList.toggle("active");
       });
     });
   
