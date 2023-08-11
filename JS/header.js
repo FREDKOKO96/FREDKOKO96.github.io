@@ -1,40 +1,53 @@
+const headerContainer = document.querySelector(".header-container");
+const header = document.querySelector("header");
 
-    var header           = document.getElementById('header');
-    var navigationHeader = document.getElementById('navigation_header');
-    var content          = document.getElementById('content');
-    var showSidebar      = false;
+const menuIcon = document.querySelector(".menu-icon");
+const mobileMenuItems = document.querySelector(".mobile-menu-items");
 
-    function toggleSidebar()
-    {
-        showSidebar = !showSidebar;
-        if(showSidebar)
-        {
-            navigationHeader.style.marginLeft = '-10vw';
-            navigationHeader.style.animationName = 'showSidebar';
-            content.style.filter = 'blur(2px)';
-        }
-        else
-        {
-            navigationHeader.style.marginLeft = '-100vw';
-            navigationHeader.style.animationName = '';
-            content.style.filter = '';
-        }
-    }
+const mobileSearchIcon = document.querySelector(".mobile-header .search-icon");
+const searchBoxMobile = document.querySelector(".searchbox-mobile");
 
-    function closeSidebar()
-    {
-        if(showSidebar)
-        {
-            showSidebar = true;
-            toggleSidebar();
-        }
-    }
+const timesIcon = document.querySelector(".search-icon .fa-times");
+const searchIcon = document.querySelector(".search-icon .fa-search");
 
-    window.addEventListener('resize', function(event) {
-        if(window.innerWidth > 768 && showSidebar) 
-        {  
-            showSidebar = true;
-            toggleSidebar();
-        }
-    });
+const searchIconDesktop = document.querySelector(".social .search-icon-desktop");
+const searchBoxDesktop = document.querySelector(".searchbox-desktop");
 
+// Scroll
+
+window.addEventListener("scroll", function () {
+
+  if (window.pageYOffset > 300) {
+    header.classList.add("scrolled");
+    headerContainer.classList.add("fixed");
+  } else {
+    header.classList.remove("scrolled");
+    headerContainer.classList.remove("fixed");
+  }
+})
+
+// Desktop Search
+
+searchIconDesktop.addEventListener("click", function () {
+  searchBoxDesktop.classList.toggle("active");
+})
+
+// Mobile Menu 
+
+menuIcon.addEventListener("click", function () {
+  mobileMenuItems.classList.toggle("active");
+})
+
+// Mobile Search
+
+mobileSearchIcon.addEventListener("click", function () {
+  searchBoxMobile.classList.toggle("active");
+
+  if (searchBoxMobile.classList.contains("active")) {
+    searchIcon.style.display = "none";
+    timesIcon.style.display = "block";
+  } else {
+    searchIcon.style.display = "block";
+    timesIcon.style.display = "none";
+  }
+})
