@@ -191,9 +191,7 @@ header {
 @media (max-width: 768px) {
   /* (Estilos anteriores) */
 
-  .contact-btn {
-      display: none; /* Asegurarse de que el botón de contacto esté oculto en pantallas pequeñas */
-  }
+  
 
   .menu-toggle {
       display: block;
