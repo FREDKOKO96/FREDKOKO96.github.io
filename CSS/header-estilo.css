@@ -1,151 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-  }
-  
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    font-family: 'Noto Sans JP', sans-serif;
-    background: url(fondo.jpg) no-repeat center center fixed;
-    background-size: cover;
-   
-  }
-  
-  .logo{
-    width: 120px;
-    height: 25px;  
-  }
- 
-
-  nav{
-      display: flex;
-      align-items:center;
-      justify-content: space-around;
-      min-height:8vh;
-      background-color: #294674;
-  }
-
-  .ham{
-    display:none;
-    background-color:transparent;
-    cursor: pointer;
-    border:none;
-    margin:0;
-    padding:0;
-    }
-    
-    .ham span{
-        background-color: #f3f3f3;
-        display:block;
-        height:3px;
-        width: 28px;
-        margin:10px auto;
-        border-radius:2px;    
-    }
-  .enlaces-menu{
-      display:flex;
-      padding:0;
-  }
-  .enlaces-menu li{
-      padding: 0 40px;
-      list-style-type: none;
-      transition: 0.3s;
-  }
-
-  .enlaces-menu li a{
-      text-decoration:none;
-      font-size: 1.8rem;
-      color:#f3f3f3;
-      font-weight:600;
-  }
-  .enlaces-menu li:hover{
-      background-color:rgb(62, 130, 197);
-  }
-
-
-/* DISPOSITIVOS MOVILES */
-
-  @media (max-width:768px) {
-    body{
-      overflow:hidden;
-    }
-      .ham{
-          display:block;
-          cursor:pointer;
-          position: absolute; 
-          top:15px;
-          right:25px;
-          transition: 0.2s  0.1s; 
-  
-      }
-   
-      
-      nav{
-          flex-direction:column;
-          align-items: flex-start;
-          padding-top: 25px;
-          padding-bottom: 25px;
-      }
-
-      .logo{
-        padding-left:25px;
-        
-      }
-
-      .enlaces-menu{
-        
-          flex-direction:column;
-          justify-content: space-around;
-          align-items:center;
-          height: 92vh;         
-          margin:0;
-          padding:0; 
-          display:none;
-          opacity:0;
-          transition: opacity 5s ease-out;
-          width:100%;
-      
-         
-      }
-      .enlaces-menu li{
-        text-align:center;
-        width:100%;
-        padding:20px;    
-    }
-  
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* Animaciones */
-  
-@keyframes muestraMenu {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-  .enlaces-menu.activado{
-      display:flex; 
-      animation: muestraMenu 350ms ease-in-out both;
-  }
+a:hover {
+  opacity: 0.7;
+}
 
-  .br-1.animado{
-    transform: rotate(-45deg) translate(-10px, 8px);
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #23232e;
+  height: 8vh;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
   }
-  
-  .br-2.animado{
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
     opacity: 0;
   }
-  .br-3.animado{
-    transform: rotate(45deg) translate(-10px, -8px);
+  .mobile-menu {
+    display: block;
   }
+}
 
- .ham.girar:hover{
-     transform:rotate(360deg);
- }
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
