@@ -67,24 +67,31 @@ li a:hover {
   display: none;
 }
 
-/* Estilos para submenús */
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
 .submenu ul {
-  position: static;
   display: none;
-  background: none;
-  box-shadow: none;
-  border-radius: 0;
-  width: auto;
-  top: 0;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  top: 100%;
   left: 0;
 }
 
-.submenu.active ul {
+.submenu:hover ul {
   display: block;
-  width: 100%;
 }
 
-.submenu:hover ul {
+nav ul li.submenu:focus-within .submenu ul {
   display: block;
 }
 
@@ -105,7 +112,6 @@ li a:hover {
   color: #ffffff;
 }
 
-/* Estilos para el menú móvil */
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
