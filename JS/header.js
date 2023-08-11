@@ -1,45 +1,53 @@
-var nav;
-var isOpen = false;
+const headerContainer = document.querySelector(".header-container");
+const header = document.querySelector("header");
 
-function clickOutside(e) {
-  if (
-    e.target !== document.querySelector("nav") &&
-    e.target !== document.querySelector(".menu") &&
-    isOpen
-  )
-    nav.style.top = "-100vh";
-}
+const menuIcon = document.querySelector(".menu-icon");
+const mobileMenuItems = document.querySelector(".mobile-menu-items");
 
-function addClickOutside() {
-  // console.log("added!");
-  window.removeEventListener("click", clickOutside);
-  window.addEventListener("click", clickOutside);
-}
+const mobileSearchIcon = document.querySelector(".mobile-header .search-icon");
+const searchBoxMobile = document.querySelector(".searchbox-mobile");
 
-function removeClickOutside() {
-  // console.log("removed!");
-  window.removeEventListener("click", clickOutside);
-  isOpen && toggleMenu();
-}
+const timesIcon = document.querySelector(".search-icon .fa-times");
+const searchIcon = document.querySelector(".search-icon .fa-search");
 
-function toggleMenu() {
-  // console.log(`toggle menu to ${!isOpen}`);
-  nav.style.top = isOpen ? "-100vh" : "5rem";
-  isOpen = !isOpen;
-}
+const searchIconDesktop = document.querySelector(".social .search-icon-desktop");
+const searchBoxDesktop = document.querySelector(".searchbox-desktop");
 
-function checkClickOutside() {
-  if (window.matchMedia("(min-width: 40em)").matches) removeClickOutside();
-  else addClickOutside();
-}
+// Scroll
 
-window.onload = function() {
-  // console.log("loaded!")
-  nav = document.querySelector("nav");
-  checkClickOutside();
-}
+window.addEventListener("scroll", function () {
 
-window.onresize = function() {
-  // console.log("resize!");
-  checkClickOutside();
-}
+  if (window.pageYOffset > 300) {
+    header.classList.add("scrolled");
+    headerContainer.classList.add("fixed");
+  } else {
+    header.classList.remove("scrolled");
+    headerContainer.classList.remove("fixed");
+  }
+})
+
+// Desktop Search
+
+searchIconDesktop.addEventListener("click", function () {
+  searchBoxDesktop.classList.toggle("active");
+})
+
+// Mobile Menu 
+
+menuIcon.addEventListener("click", function () {
+  mobileMenuItems.classList.toggle("active");
+})
+
+// Mobile Search
+
+mobileSearchIcon.addEventListener("click", function () {
+  searchBoxMobile.classList.toggle("active");
+
+  if (searchBoxMobile.classList.contains("active")) {
+    searchIcon.style.display = "none";
+    timesIcon.style.display = "block";
+  } else {
+    searchIcon.style.display = "block";
+    timesIcon.style.display = "none";
+  }
+})
