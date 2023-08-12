@@ -67,15 +67,7 @@ li a:hover {
   display: none;
 }
 
-@media (max-width: 952px) {
-  .enlace {
-    padding-left: 20px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-}
-
+/* Estilos para submenús */
 .submenu ul {
   display: none;
   position: absolute;
@@ -85,13 +77,14 @@ li a:hover {
   width: 100%;
   top: 100%;
   left: 0;
+  z-index: 1; /* Asegura que los submenús estén por encima del contenido */
 }
 
-.submenu:hover ul {
+.submenu.active ul {
   display: block;
 }
 
-nav ul li.submenu:focus-within .submenu ul {
+.submenu:hover ul {
   display: block;
 }
 
@@ -112,6 +105,7 @@ nav ul li.submenu:focus-within .submenu ul {
   color: #ffffff;
 }
 
+/* Estilos para el menú móvil */
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
