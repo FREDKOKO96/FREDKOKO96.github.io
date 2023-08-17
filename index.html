@@ -1,47 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú Responsive</title>
-<link rel="stylesheet" href="CSS/header-estilo.css">
-<link rel="stylesheet" href="CSS/estilo-banner.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-<nav>
-<input type="checkbox" id="check">
-<label for="check" class="checkbtn">
-<i class="fas fa-bars"></i>
-</label>
-<a href="https://fredkoko96.github.io/index.html#" class="enlace">
-<img src="Imagenes/uaeh-Logo.png" alt="" class="logo">
-</a>
-<ul>
-<li><a href="#">Inicio</a></li>
-<li><a href="#">Conócenos</a></li>
-<li class="submenu"><a href="#">Cursos <i class="fas fa-chevron-down"></i></a>
-  <ul>
-    <li><a href="#">Curso 1</a></li>
-    <li><a href="#">Curso 2</a></li>
-    <!-- Agrega más cursos aquí -->
-  </ul>
-</li>
-<li class="submenu"><a href="#">Talleres <i class="fas fa-chevron-down"></i></a>
-  <ul>
-    <li><a href="#">Taller 1</a></li>
-    <li><a href="#">Taller 2</a></li>
-    <!-- Agrega más talleres aquí -->
-  </ul>
-</li>
-<li><a class="active" href="#">Contacto</a></li>
-</ul>
-</nav>
+<html lang="es">
 
-<section>
- 
-</section>
-<script src="JS/click-header.js"></script> <!-- Agrega esta línea para vincular el archivo JS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web AlexCG</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="contenedor nav">
+                <div class="logo">
+                    <img src="img/uaeh_logo_color.png" alt="">
+                </div>
+                <div class="enlaces-header">
+                    <a href="#">Inicio</a>
+                    <a href="#">Conocenos</a>
+                    <a href="#">Talleres</a>
+                    <a href="#">Cursos</a>
+                    <a href="#">Contactanos</a>
+                </div>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+        <section class="banner">
+        <div class="contenedor">
+            <section class="contenido-header">
+                <section class="textos-header">
+                    <h1>Listo para aprender sobre distintos temas </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolorum.</p>
+                    <a href="#">Ver video</a>
+                    <a href="#">Ver cursos</a>
+                </section>
+                <img src="img/garzafly.png" alt="">
+            </section>
+        </div>
+    </section>
+    </header>
+    <section class="about-us">
+        <div class="contenedor1">
+            <h2 class="titulo">Ofrecemos gran variedad de cursos para tí</h2>
+            <div class="contenedor-articulo">
+                <div class="articulo" data-aos="zoom-in-right">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h3>Computación basica</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    <a href="#">Saber más ---></a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <i class="fas fa-mobile"></i>
+                    <h3>Uso y manejo del celular</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    <a href="#">Saber más ---></a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <i class="fas fa-cog"></i>
+                    <h3>Ingles</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    <a href="#">Saber más ---></a>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <section class="questions contenedor">
+        <section class="textos-questions">
+            <h1>¿Tienes alguna duda?</h1><br><h1>Contactanos</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolorum.</p>
+            <a href="#">Contacto</a>
+        </section>
+        <img src="img/ejemplo.png" alt="" data-aos="zoom-out-up" data-aos-duration="2000">
+    </section>
+
+    <section class="results">
+        <div class="contenedor1 conten-results">
+            <section class="numbers">
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+            </section>
+            <section class="results-text">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sequi nihil unde.</p>
+                <a href="#">Ingrese aquí</a>
+            </section>
+        </div>
+    </section>
+
+    <section class="contenedor1 services">
+        <img src="img/ejemplo.png" alt="">
+        <div class="box-skills">
+            <h4><i class="far fa-check-circle"></i> Mejora tus habilidades frente al ordenador</h4>
+            <h4><i class="far fa-check-circle"></i> Aprende un nuevo idioma</h4>
+            <h4><i class="far fa-check-circle"></i> Clases virtuales y presenciales</h4>
+            <h4><i class="far fa-check-circle"></i> Contenido audiovisual</h4>
+            <h4><i class="far fa-check-circle"></i> Clases personalizadas por expertos</h4>
+        </div>
+    </section>
+
+    <footer>
+        <div class="partFooter">
+            <img src="img/uaeh_logo_color.png" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
+            <a href="#">Services 1</a>
+            <a href="#">Services 2</a>
+            <a href="#">Services 3</a>
+        </div>
+        <div class="partFooter">
+            <h4>Acerca de</h4>
+            <a href="#">About 1</a>
+            <a href="#">About 2</a>
+            <a href="#">About 3</a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
