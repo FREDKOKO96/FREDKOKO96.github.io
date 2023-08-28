@@ -541,17 +541,17 @@ footer {
 
     .enlaces-header {
         position: fixed;
-        background: #E8641C;
+        background: #667db6;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #F8B688, #E8641C, #E8641C, #F8B688);
+        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #F8B688, #E8641C, #E8641C, #F8B688);
+        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         top: 0;
         right: 0;
         width: 100%;
         height: 100vh;
-        font-size: x-large;
+        font-size:xx-large;
         display: flex;
         align-items: center;
         flex-direction: column;
