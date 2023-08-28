@@ -36,8 +36,14 @@
                 <section class="textos-header">
                     <h1>Listo para aprender sobre distintos temas </h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolorum.</p>
-                    <a href="#">Ver video</a>
-                    <a href="#">Ver cursos</a>
+                    <button id="openButton">Abrir Video</button>
+                    <div id="videoPopup" class="popup">
+                    <div class="popup-content">
+                    <span id="closeButton" class="close-button">&times;</span>
+                    <iframe id="videoFrame" width="660" height="415" src="https://www.youtube.com/embed/04WuoQMhhxw?si=qFW-wpmHL3gQ2i9N" frameborder="0" allowfullscreen></iframe>
+                 </div>
+             </div>
+                    <button id="botoncursos">Ver cursos</button>
                 </section>
                 <img src="img/garzafly.png" alt="">
             </section>
@@ -152,6 +158,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
     <script src="js\main.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
