@@ -6,11 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   openButton.addEventListener("click", function() {
     videoPopup.style.display = "flex";
-    videoFrame.src = "https://www.youtube.com/embed/VIDEO_ID?rel=0&autoplay=1";
+    videoFrame.src = "https://www.youtube.com/embed/OfuBNntnwRA?si=k0MnGxzm4BR3dEGa"; // Reemplaza VIDEO_ID con el ID real del video de YouTube
   });
 
   closeButton.addEventListener("click", function() {
     videoPopup.style.display = "none";
-    videoFrame.src = videoFrame.src; // Detiene el video
+    videoFrame.src = ""; // Detiene el video
+    videoFrame.src = "about:blank"; // Detiene completamente la reproducción
   });
 });
