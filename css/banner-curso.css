@@ -1,6 +1,7 @@
    /* Estilos para el banner-curso */
    .banner-cursos {
     text-align: center;
+    background-color: cornsilk;
     background-image: url('C:\Users\fred_\OneDrive\Documentos\GitHub\FREDKOKO96.github.io\img\garzafly.png'); /* Reemplaza 'tu-imagen.jpg' con la URL de tu imagen */
     background-size: cover;
     color: #fff; /* Color del texto */
