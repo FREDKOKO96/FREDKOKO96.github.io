@@ -4,20 +4,17 @@
     margin: 0px;
     padding: 0px;
 }
-.container {
-align-content: center;
 
-}
 .card {
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px 20px 16px 16px;
-    background-color: rgb(222, 213, 213);
+    background-color: white;
     cursor: pointer;
     overflow: hidden;
     max-width: clamp(620px, 70vw, 820px);
-    min-width: 160px;
-    min-height: 160px;
+    min-width: 260px;
+    min-height: 280px;
 }
 
 .card:hover {
@@ -25,7 +22,7 @@ align-content: center;
 }
 
 .background {
-    flex: 1 1 150px;
+    flex: 1 1 250px;
 }
 
 .background img {
