@@ -25,12 +25,12 @@ align-items: center;
 }
 
 .background {
-    flex: 1 1 250px;
+    flex: 1 1 150px;
 }
 
 .background img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
