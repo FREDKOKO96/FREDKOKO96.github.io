@@ -15,6 +15,7 @@
     max-width: clamp(620px, 70vw, 820px);
     min-width: 260px;
     min-height: 280px;
+    align-items: center;
 }
 
 .card:hover {
