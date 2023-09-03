@@ -9,13 +9,12 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px 20px 16px 16px;
-    background-color: white;
+    background-color: rgb(222, 213, 213);
     cursor: pointer;
     overflow: hidden;
     max-width: clamp(620px, 70vw, 820px);
-    min-width: 260px;
-    min-height: 280px;
-    align-items: center;
+    min-width: 160px;
+    min-height: 160px;
 }
 
 .card:hover {
