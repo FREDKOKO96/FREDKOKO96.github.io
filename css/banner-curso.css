@@ -1,15 +1,16 @@
    /* Estilos para el banner-curso */
    .banner-cursos {
     text-align: center;
-    background-color: #f8b688;
-    color: #fff; /* Color del texto */
-    padding: 100px 0; /* Espaciado interior superior e inferior */
+    background-color: #e8641c;
+    /*background-image: url(../img/ejemplo.png);*/
+    color: #fff; 
+    padding: 100px 0; 
     height: 150px;
 }
 
 /* Estilos para el texto en el banner */
 .banner-text {
-    font-size: 30px; /* Tamaño del texto */
-    font-weight: bold; /* Negritas */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-size: 30px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }

@@ -1,0 +1,47 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para temas, subtemas y contenido */
+.tema {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tema h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #841816;
+}
+
+.subtema {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.subtema2{
+    font-weight: bold;
+    color: #E8641C;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+
+
