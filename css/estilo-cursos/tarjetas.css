@@ -44,7 +44,7 @@ p {
 .btntj {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f39200;
+    background-color: #e8641c;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -52,5 +52,5 @@ p {
 }
 
 .btntj:hover {
-    background-color: #f39900;
+    background-color: #511013;
 }
