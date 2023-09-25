@@ -43,7 +43,7 @@ h1 {
 
 .navigation-buttons {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   
   .nav-button {
@@ -56,7 +56,22 @@ h1 {
     border-radius: 5px;
     
   }
+
+  .nav-button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9d9d9c;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor:auto;
+  }
   
+  .nav-button2:hover {
+    background-color: #511013;
+  }
+
   .nav-button:hover {
     background-color: #511013;
   }

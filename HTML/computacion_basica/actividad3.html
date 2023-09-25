@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página web de prueba "Cursos"</title>
+    <link rel="stylesheet" href="../../css/estilo-cursos/banner-actividades.css">
     <link rel="stylesheet" href="../../css/estilos.css">
-    <link rel="stylesheet" href="../../css/banner-curso.css">
+    <link rel="stylesheet" href="../../css/estilo-cursos/teclado.css">
+    <link rel="stylesheet" href="../../css/estilo-cursos/quiz.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="../../css/estilo-cursos/Indice.css">
+
 </head>
 
 <body>
@@ -38,37 +40,35 @@
     </header>
     <section class="banner-cursos">
         <div class="banner-text">
-            Computación básica<br>
-            <!--<a href="pagina-de-curso.html" class="boton-iniciar-curso">Iniciar Curso</a>-->
+            ¡Actividad 3: Manejo del Teclado!
         </div>
     </section>
+    <br><br><br><br>
+    <section>
+     <h2><b>En esta actividad deberás escribir el texto dentro del área designada, 
+      ten en cuenta que el texto deberá estar escrito exactamente igual a como lo observamos, incluyendo espacios y signos de puntuación. </b></h2>
+    </section><br><br>
 
-    <main class="container">
-        <!-- Sección de contenidos -->
-        <section class="tema">
-            <h1>Tema 1: Introducción a la Tecnología</h1>
-            <a href="../computacion_basica/tema1.html" class="subtema">Subtema 1.1: ¿Que es la tegnología?</a>
-            <p>Una visión general de la tecnología moderna y cómo afecta nuestras vidas.</p>
-
-            <a href="../computacion_basica/tema2.html" class="subtema">Subtema 1.2: Dispositivos Tecnológicos</a>
-            <p>Familiarización con computadoras, smartphones y tabletas.</p>
-
-            <a  href="../computacion_basica/actividad1.html" class="subtema2">Actividad 1: Introducción a la tegnología</a>
-        </section>
-
-        <section class="tema">
-            <h1>Tema 2: Uso de Teclado y Mouse</h1>
-            <a href="../computacion_basica/tema3.html" class="subtema">Subtema 2.1:Uso del Mouse</a>
-            <p>Uso básico del Mouse para navegar y seleccionar.</p>
-
-            <a  href="../computacion_basica/actividad2.html" class="subtema2">Actividad 2: Manejo del Mouse</a><br>
-
-            <a href="../computacion_basica/tema4.html" class="subtema">Subtema 2.2:Uso del Teclado</a>
-            <p>Uso básico del teclado para navegar y seleccionar.</p>
-
-            <a  href="../computacion_basica/actividad3.html" class="subtema2">Actividad 3: Manejo del teclado</a>
-        </section>
-    </main>
+    <div class="container">
+        <div id="code-container">
+          <h1>Valida el siguiente texto</h1>
+          <div id="instructions">
+            <p2><strong>Las teclas de un teclado están diseñadas para representar letras,
+               números, símbolos, caracteres especiales y funciones específicas.</strong></p2>
+          </div>
+          <textarea id="code-input" placeholder="Ingresa la secuencia..."></textarea>
+          <button id="btn-check">Comprobar</button>
+          <h1 id="btn-next-page" ></h1>
+          <div id="error-message" class="error-message"></div>
+        </div>
+      </div>
+    <br>
+    <div class="navigation-buttons">
+        <a href="../computacion_basica/principalba.html" class="nav-button">Inicio</a><br><br>
+        <a href="../computacion_basica/tema4.html" class="nav-button">Página anterior</a>
+        <a href="../computacion_basica/tema5.html" class="nav-button">Continuar</a>
+      </div><br><br>
+    
     
     <footer>
         <div class="partFooter">
@@ -102,7 +102,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
     <script src="../../js/main.js"></script>
-    
+    <script src="../../js/act3.js"></script>
+    <script src="../../js/teclado.js"></script>
 </body>
 
 </html>

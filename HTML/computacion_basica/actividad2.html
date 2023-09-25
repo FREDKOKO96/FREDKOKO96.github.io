@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página web de prueba "Cursos"</title>
+    <link rel="stylesheet" href="../../css/estilo-cursos/banner-actividades.css">
     <link rel="stylesheet" href="../../css/estilos.css">
-    <link rel="stylesheet" href="../../css/banner-curso.css">
+    <link rel="stylesheet" href="../../css/estilo-cursos/quiz.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="../../css/estilo-cursos/Indice.css">
+
 </head>
 
 <body>
@@ -38,37 +39,43 @@
     </header>
     <section class="banner-cursos">
         <div class="banner-text">
-            Computación básica<br>
-            <!--<a href="pagina-de-curso.html" class="boton-iniciar-curso">Iniciar Curso</a>-->
+            ¡Actividad 2: Manejo del Mouse!
         </div>
     </section>
+    <br><br><br><br>
+    <section>
+     <h2><b>En esta página encontrarás varias casillas a las que deberás de dar 
+        clic hasta que todas se marquen en color azul, esto te ayudara a mejorar tus habilidades al momento de controlar el mouse </b></h2>
+    </section><br><br>
 
-    <main class="container">
-        <!-- Sección de contenidos -->
-        <section class="tema">
-            <h1>Tema 1: Introducción a la Tecnología</h1>
-            <a href="../computacion_basica/tema1.html" class="subtema">Subtema 1.1: ¿Que es la tegnología?</a>
-            <p>Una visión general de la tecnología moderna y cómo afecta nuestras vidas.</p>
+    <form>
+        <h2><center>
+          <input type="checkbox" name="sample" onClick="setCheck(1)" />Uno<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(2)" />Dos<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(3)" />Tres<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(4)" />Cuatro<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(5)" />Cinco<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(6)" />Seis<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(7)" />Siete<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(8)" />Ocho<br /><br>
+          <input type="checkbox" name="sample" onClick="setCheck(9)" />Nueve<br /><br>
+        </h2></center>
+      </form>
+      <style>
+        input[type="checkbox"] {
+          transform: scale(2);
+          margin-right: 10px;
+        }
+      </style>
 
-            <a href="../computacion_basica/tema2.html" class="subtema">Subtema 1.2: Dispositivos Tecnológicos</a>
-            <p>Familiarización con computadoras, smartphones y tabletas.</p>
 
-            <a  href="../computacion_basica/actividad1.html" class="subtema2">Actividad 1: Introducción a la tegnología</a>
-        </section>
-
-        <section class="tema">
-            <h1>Tema 2: Uso de Teclado y Mouse</h1>
-            <a href="../computacion_basica/tema3.html" class="subtema">Subtema 2.1:Uso del Mouse</a>
-            <p>Uso básico del Mouse para navegar y seleccionar.</p>
-
-            <a  href="../computacion_basica/actividad2.html" class="subtema2">Actividad 2: Manejo del Mouse</a><br>
-
-            <a href="../computacion_basica/tema4.html" class="subtema">Subtema 2.2:Uso del Teclado</a>
-            <p>Uso básico del teclado para navegar y seleccionar.</p>
-
-            <a  href="../computacion_basica/actividad3.html" class="subtema2">Actividad 3: Manejo del teclado</a>
-        </section>
-    </main>
+    <br><br><br>
+    <div class="navigation-buttons">
+        <a href="../computacion_basica/principalba.html" class="nav-button">Inicio</a><br><br>
+        <a href="../computacion_basica/tema3.html" class="nav-button">Página anterior</a>
+        <a href="../computacion_basica/actividad2-2.html" class="nav-button">Continuar</a>
+      </div><br><br>
+    
     
     <footer>
         <div class="partFooter">
@@ -102,7 +109,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
     <script src="../../js/main.js"></script>
-    
+    <script src="../../js/quiz.js"></script>
 </body>
 
 </html>
