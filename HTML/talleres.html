@@ -1,115 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Página web de prueba "Cursos"</title>
-        <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="stylesheet"  href="../css/banner-curso.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet"  href="../css/tarjetas-cursos.css">
-    </head>
-    
-    <body>
-        <header>
-            <nav>
-                <section class="contenedor nav">
-                    <div class="logo">
-                        <img src="../img/uaeh_logo_color.png" alt="">
-                    </div>
-                    <div class="enlaces-header">
-                        <a href="../index.html">Inicio</a>
-                        <a href="#">Conocenos</a>
-                        <a href="#">Talleres</a>
-                        <a href="../HTML/cursos.html">Cursos</a>
-                        <a href="#">Contactanos</a>
-                    </div>
-                    <div class="hamburguer">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </section>
-            </nav>
-        </header>
-        <section class="banner-cursos">
-            <div class="banner-text">
-                ¡Bienvenido a nuestros cursos!
-            </div>
-        </section>
-        <br><br><br><br><br><br>
-        <center>
-        <div class="container">       
-            <div class="card">
-                <div class='background'>
-                    <img src="../img/Tarjeta-CB.png" alt="background" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web de prueba "Cursos"</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet"  href="../css/banner-curso.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="../css/estilo-cursos/tarjetas.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="contenedor nav">
+                <div class="logo">
+                    <img src="../img/uaeh_logo_color.png" alt="">
                 </div>
-                <div class='content'>
-                    <h2>Computación Básica</h2>
-                    <ul>
-                        <a href="../index.html">Uso del teclado</a>
-                        <br><br>
-                        <a href="../index.html">Uso del mouse</a>
-                    </ul>
-                   
+                <div class="enlaces-header">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../HTML/conocenos.html">Conocenos</a>
+                    <a href="../HTML/talleres.html">Talleres</a>
+                    <a href="../HTML/cursos.html">Cursos</a>
+                    <a href="../HTML/contacto.html">Contactanos</a>
                 </div>
-            </div>
-            <br><br>
-            <div class="card">
-                <div class='background'>
-                    <img src="../img/Tarjeta-CB.png" alt="background" />
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
                 </div>
-                <div class='content'>
-                    <h2>Ingles</h2>
-                    <ul>
-                        <li>
-                            Ingles Basico
-                        </li>
-                        <br>
-                        <li>
-                            Ingles avanzado
-                        </li>
-                    </ul>
-                   
-                </div>
-            </div>    
+            </section>
+        </nav>
+    </header>
+    <section class="banner-cursos">
+        <div class="banner-text">
+            ¡Bienvenido a nuestros talleres!
         </div>
-        <br><br><br><br><br>
-        <footer>
-            <div class="partFooter">
-                <img src="../img/uaeh_logo_color.png" alt="">
+    </section>
+    <br><br><br><br><br><br>
+    
+        <div class="containertj">
+            <div class="card">
+                <img class="imgtj" src="../img/garza-circular.png" alt="Curso 1">
+                <h2>Manejo del celular</h2>
+                <p>Este curso básico de informática para personas mayores es una introducción amigable y accesible al mundo de la tecnología. </p><br>
+                <a href="../HTML/manejo_celular/temac1.html" class="btntj">Ir al curso</a>
             </div>
-            <div class="partFooter">
-                <h4>Servicios</h4>
-                <a href="#">Services 1</a>
-                <a href="#">Services 2</a>
-                <a href="#">Services 3</a>
+            
+           <!--  <div class="card">
+                <img class="imgtj" src="../img/garza-circular.png" alt="Curso 2">
+                <h2>Ingles</h2>
+                <p>Descripción corta del curso 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btntj">Ir al curso</a>
             </div>
-            <div class="partFooter">
-                <h4>Acerca de</h4>
-                <a href="#">About 1</a>
-                <a href="#">About 2</a>
-                <a href="#">About 3</a>
+
+            <div class="card">
+                <img class="imgtj" src="../img/garza-circular.png" alt="Curso 2">
+                <h2>Natación</h2>
+                <p>Descripción corta del curso 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="btntj">Ir al curso</a>
+            </div> -->
+            
+            <!-- Puedes agregar más tarjetas de talleres aquí -->
+    
+        </div>
+    
+    <br><br><br><br><br>
+    <footer>
+        <div class="partFooter">
+            <img src="../img/uaeh_logo_color.png" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
+            <a href="#">Services 1</a>
+            <a href="#">Services 2</a>
+            <a href="#">Services 3</a>
+        </div>
+        <div class="partFooter">
+            <h4>Acerca de</h4>
+            <a href="#">About 1</a>
+            <a href="#">About 2</a>
+            <a href="#">About 3</a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-tiktok"></i>
             </div>
-            <div class="partFooter">
-                <h4>Redes sociales</h4>
-                <div class="social-media">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-tiktok"></i>
-                </div>
-            </div>
-        </center>
-        </footer>
-      
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
-        <script src="../js/main.js"></script>
-        
-    </body>
+        </div>
+    
+    </footer>
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    
+</body>
+
 </html>
